@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+#define size 4
+int stack [size];
+int top = -1;
+ void push (int num){
+    if(top<size-1){
+        top++;
+        stack[top] = num;
+        cout<<num<<"inserted sucessfully"<<endl;
+    }
+    else{
+        cout<<"stack is overflow"<<endl;
+    }
+}
+
+int main(){
+    push(8);
+    push(3);
+    push(1);
+    push(7);
+    push(6);
+    push(8);
+    push(9);
+    push(7);
+    push(4);
+    push(2);
+    
+}
